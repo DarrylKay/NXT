@@ -1,0 +1,29 @@
+.container {
+  .section {
+    .checkout-container {
+      padding: 30px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      .details-payment-section {
+      }
+      .sum-section {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    .section {
+      .checkout-container {
+        grid-template-columns: 1fr;
+
+        .sum-section {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}

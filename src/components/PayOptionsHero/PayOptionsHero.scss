@@ -1,0 +1,78 @@
+.pay-hero {
+  width: 100%;
+padding-bottom: 20px;
+  background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgb(89, 127, 163)),
+    to(rgb(36, 196, 161))
+  );
+  background-image: linear-gradient(
+    180deg,
+    rgb(89, 127, 163),
+    rgb(36, 196, 161)
+  );
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  .hero-title-box {
+    margin-top: 10px;
+    color: white;
+    .title {
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: 100;
+      font-size: 3.6rem;
+      font-style: italic;
+      strong {
+        padding: 0 10px;
+        font-weight: 600 !important;
+        font-style: normal;
+      }
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+  .hero-description {
+    color: white;
+
+    p {
+      font-size: 1.9rem;
+    }
+  }
+  .hero-button {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    cursor: pointer;
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .pay-hero {
+    height: auto;
+    padding-bottom: 15px;
+
+    .hero-title-box {
+      margin-top: 0;
+    }
+  }
+}

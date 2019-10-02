@@ -1,0 +1,46 @@
+.create-container {
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  .create-box {
+    width: 350px;
+    float: left;
+    .create-header {
+      .title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+    }
+    .info-section {
+      width: 50%;
+      margin: 10px 0;
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    .create-button {
+      cursor: pointer;
+      border: 1px solid lightgrey;
+      background: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      text-transform: capitalize;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        border: 1px solid black;
+        background: black;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .create-container {
+    .create-box {
+      width: 350px;
+      float: right;
+    }
+  }
+}

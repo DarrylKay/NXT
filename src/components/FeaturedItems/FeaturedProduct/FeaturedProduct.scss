@@ -1,0 +1,94 @@
+#product-box {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  .image-box {
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(148,148,148,0.75);
+    box-shadow: 1px 1px 2px 0px rgba(148,148,148,0.75);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    background: blue;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+    &:hover {
+      .featured-btn {
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        opacity: 1;
+      }
+    }
+    .featured-image {
+      width: 100%;
+      opacity: 1;
+    }
+    .featured-btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: absolute;
+      background: rgba(41, 41, 41, 0.8);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      .button {
+        text-decoration: none;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 25px;
+        border: 1px solid lightgrey;
+        background: white;
+        color: black;
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        cursor: pointer;
+      }
+    }
+  }
+  .featured-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    .title {
+      width: 100%;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .price {
+      width: 100%;
+      text-align: right;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #product-box {
+    .featured-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 5px;
+      font-family: "Montserrat";
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+#wishlist {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 90%;
+  -webkit-transform: translate3d(601px, 0, 0);
+  transform: translate3d(601px, 0, 0);
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  z-index: 2;
+  padding: 90px 0;
+  border-left: 1px solid black;
+  overflow-x: scroll;
+  &.active {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 90%;
+    -webkit-box-shadow: -12px 10px 73px -21px rgba(0, 0, 0, 0.75);
+    box-shadow: -12px 10px 73px -21px rgba(0, 0, 0, 0.75);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 2;
+    padding: 90px 0;
+    border-left: 1px solid black;
+    overflow-x: scroll;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 1.9rem;
+    line-height: 15px;
+  }
+
+  .close-btn {
+    text-align: right;
+    padding-right: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 15px;
+    cursor: pointer;
+    span {
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #wishlist {
+    padding: 90px 5px;
+    width: 95vw;
+    &.active {
+      width: 95vw;
+
+      padding: 90px 5px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    .close-btn {
+      text-align: right;
+      padding-right: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      line-height: 15px;
+      cursor: pointer;
+      span {
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+  }
+}

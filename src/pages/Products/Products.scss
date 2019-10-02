@@ -1,0 +1,44 @@
+.container {
+  display: block;
+  overflow: hidden;
+  #products {
+    padding-top: 20px;
+    .section {
+      .all-products-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    #products {
+      padding: 0 !important;
+      .section {
+        .all-products-container {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    #products {
+      padding: 0 !important;
+      .section {
+        .all-products-container {
+          width: 80%;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}

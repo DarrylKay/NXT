@@ -1,0 +1,96 @@
+.sign-container {
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  .sign-box {
+    width: 350px;
+    float: right;
+    .sign-header {
+      .title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+    }
+    .info-section {
+      width: 75%;
+      margin: 10px 0;
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    .input-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      .box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 10px 0;
+        label {
+          font-size: 0.7rem;
+          font-weight: 700;
+          padding: 5px 0;
+          text-transform: uppercase;
+        }
+        input {
+          width: 78%;
+          height: 30px;
+        }
+      }
+    }
+    .forgot-details-section {
+      p {
+        font-size: 0.7rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        text-decoration: underline;
+        color: red;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          color: darkred;
+        }
+      }
+    }
+    .remember-section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 5px 0;
+      .input {
+        height: 12px;
+        width: 12px;
+        border: 1px solid black;
+      }
+      p {
+        padding: 0 8px;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 0.8rem;
+      }
+    }
+    .sign-button {
+      border: 1px solid lightgrey;
+      background: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      text-transform: capitalize;
+      cursor: pointer;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        border: 1px solid black;
+        background: black;
+        color: white;
+      }
+    }
+  }
+}

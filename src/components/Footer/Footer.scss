@@ -1,0 +1,93 @@
+#footer {
+  width: 100%;
+  background: rgb(44, 44, 44);
+  color: lightgrey;
+  font-family: "Montserrat";
+ margin-top: 60px;
+  text-align: left;
+  .footer-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+   
+    .box {
+      padding: 10px;
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin: 0 auto;
+      h3 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: white;
+      }
+      p {
+        font-size: 0.8rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+    input {
+      height: 40px;
+      border-radius: 2px;
+      border: none;
+      background: rgba(73, 73, 73, 0.5);
+      color: white !important;
+      text-transform: capitalize;
+      padding: 0 5px;
+      float: left;
+      margin-left: 10px;
+      width: 170px;
+    }
+    button {
+      float: left;
+      border: none;
+      background: darkred;
+      color: white;
+      height: 40px;
+      width: 70px;
+      font-weight: 300;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+  }
+}
+
+#signature {
+  border: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgb(29, 29, 29);
+  color: lightgrey;
+  text-align: center;
+  h5 {
+    font-size: 0.6rem;
+    font-family: "Montserrat";
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #footer {
+    margin-top: 40px;
+    .footer-boxes {
+      grid-template-columns: 1fr;
+      .box{
+        margin: 0;
+      }
+    }
+  }
+}

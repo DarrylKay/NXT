@@ -3,12 +3,25 @@ import "../../App.scss";
 import "./PayOptions.scss";
 import PayOptionsHero from "../../components/PayOptionsHero/PayOptionsHero";
 import PayOptionsIcon from "../../components/PayOptionsIcon/PayOptionsIcon";
+import { connect } from "react-redux";
+import { TimelineMax } from "gsap";
 
 export class PayOptions extends Component {
+  constructor(props) {
+    super(props);
+
+    this.myPay = null;
+  }
+
+
+  componentDidMount() {
+    new TimelineMax().from(this.myPay, 1, { y: 50, opacity: 0 });
+  }
+
   render() {
     return (
       <div className="container">
-        <div className="section">
+        <div className="section" ref={div => (this.myCheckout = div)}>
           <div className="pay-options-container">
             <PayOptionsHero />
             <div className="pay-options-box">
@@ -22,7 +35,8 @@ export class PayOptions extends Component {
                 </p>
                 <p>
                   It’s <span>quick, easy</span> and it includes
-                  <span> free returns</span> and <span>furniture assembly</span>.
+                  <span> free returns</span> and <span>furniture assembly</span>
+                  .
                 </p>
               </div>
               <div className="pay-icon-box">
@@ -44,4 +58,8 @@ export class PayOptions extends Component {
   }
 }
 
-export default PayOptions;
+const mapStateToProps = state => {
+  return state;
+};
+
+export default connect(mapStateToProps)(PayOptions);

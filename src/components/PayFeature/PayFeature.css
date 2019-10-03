@@ -1,0 +1,80 @@
+#pay-feature {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#pay-feature .pay-container {
+  width: 100%;
+  background: #f0f0f0;
+  padding: 15px;
+}
+
+#pay-feature .pay-container .title-box {
+  text-align: left;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+#pay-feature .pay-container .title-box h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  word-spacing: 4px;
+}
+
+#pay-feature .pay-container .title-box span {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+#pay-feature .pay-container .title-box p {
+  font-weight: 500;
+}
+
+#pay-feature .pay-container .pay-boxes {
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 25px 15px;
+}
+
+@media only screen and (max-width: 850px) {
+  #pay-feature .pay-container .pay-boxes {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #pay-feature {
+    margin: 20px 0;
+  }
+  #pay-feature .pay-container .title-box {
+    padding: 10px 0;
+  }
+  #pay-feature .pay-container .title-box h1 {
+    font-size: 1.4rem;
+  }
+  #pay-feature .pay-container .title-box p {
+    font-size: 1rem;
+  }
+  #pay-feature .pay-container .pay-boxes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #pay-feature .pay-container .pay-boxes {
+    padding: 10px 0;
+  }
+}
+/*# sourceMappingURL=PayFeature.css.map */

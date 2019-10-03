@@ -1,0 +1,64 @@
+.icon-container {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 125px;
+  margin: 0 auto;
+}
+
+.icon-container .icon-box {
+  cursor: pointer;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#597fa3), to(#24c4a1));
+  background-image: linear-gradient(180deg, #597fa3, #24c4a1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icon-container .icon-box .icon {
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-container .info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.icon-container .info-box p {
+  color: #3f3f3f;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding-left: 5px;
+}
+/*# sourceMappingURL=IconBox.css.map */

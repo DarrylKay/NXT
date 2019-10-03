@@ -3,12 +3,23 @@ import "./Product.scss";
 
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { TimelineMax } from "gsap";
 
 export class Product extends Component {
+  constructor(props) {
+    super(props);
+
+    this.myProduct = null;
+  }
+
+  componentDidMount = () => {
+    new TimelineMax().from(this.myProduct, 1.5, { x: 100, opacity: 0 });
+  };
+
   render() {
     return (
       <div id="product">
-        <div className="product-box">
+        <div className="product-box" ref={div => (this.myProduct = div)}>
           <Link to="/productdetails" className="link">
             <div
               className="image"

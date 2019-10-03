@@ -1,0 +1,103 @@
+#home-feature {
+  position: relative;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(148, 148, 148, 0.75);
+  box-shadow: 1px 1px 2px 0px rgba(148, 148, 148, 0.75);
+}
+
+#home-feature .home-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  width: 100%;
+  height: 100%;
+}
+
+#home-feature .home-box .home-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+#home-feature .home-box .home-info h5 {
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#home-feature .home-box .home-info h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 40px 0;
+}
+
+#home-feature .home-box .home-info a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  background: black;
+  border: 1px solid black;
+  border-bottom: 1px solid lightgrey;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#home-feature .home-box .home-info a:hover {
+  background: white;
+  border: 1px solid lightgrey;
+  color: black;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#home-feature .home-box .image-box {
+  width: 100%;
+  height: 100%;
+}
+
+#home-feature .home-box .image-box img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+  #home-feature .home-box .home-info h1 {
+    font-size: 1.3rem;
+  }
+  #home-feature .home-box .home-info a {
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #home-feature .home-box {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #home-feature .home-box .home-info h1 {
+    padding: 15px 0;
+  }
+  #home-feature .home-box .home-info a {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=HomeFeatured.css.map */

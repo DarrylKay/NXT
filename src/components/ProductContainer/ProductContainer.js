@@ -8,9 +8,18 @@ import {
   addingProductWishlist,
   addingProductCart
 } from "../../redux/actions/allActions";
+import { TimelineMax } from "gsap";
 
 export class ProductContainer extends Component {
- 
+  constructor(props) {
+    super(props);
+
+    this.myProdCon = null;
+  }
+
+  componentDidMount = () => {
+    new TimelineMax().from(this.myProdCon, 1, { x: 80, opacity: 0 });
+  };
 
   showAllProducts = () => {
     if (this.props.globalState.productDisplay.length <= 0) {
@@ -22,7 +31,6 @@ export class ProductContainer extends Component {
             openInfo={this.props.openingProductInfo.bind(null, product)}
             addWishlist={this.props.addingProductWishlist.bind(null, product)}
             addCart={this.props.addingProductCart.bind(null, product)}
-            
           />
         );
       });
@@ -35,7 +43,6 @@ export class ProductContainer extends Component {
             openInfo={this.props.openingProductInfo.bind(null, product)}
             addWishlist={this.props.addingProductWishlist.bind(null, product)}
             addCart={this.props.addingProductCart.bind(null, product)}
-            
           />
         );
       });
@@ -48,7 +55,9 @@ export class ProductContainer extends Component {
           <h1>{this.props.category}</h1>
           <h4>{this.props.type}</h4>
         </div>
-        <div className="product-container">{this.showAllProducts()}</div>
+        <div className="product-container" ref={div => (this.myProdCon = div)}>
+          {this.showAllProducts()}
+        </div>
       </div>
     );
   }

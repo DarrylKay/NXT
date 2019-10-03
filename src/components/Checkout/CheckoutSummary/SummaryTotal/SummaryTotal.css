@@ -1,0 +1,62 @@
+.total-section .total-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.total-section .total-title p {
+  padding: 0 40px;
+  color: #666666;
+  text-transform: capitalize;
+}
+
+.total-section .total-title span {
+  font-weight: 800;
+  color: black;
+}
+
+.total-section button {
+  margin: 30px 0;
+  width: 90%;
+  text-decoration: none;
+  padding: 15px 40px;
+  border: none;
+  background: white;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.total-section button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.total-section button:focus {
+  outline: 0;
+}
+
+.total-section .terms {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.total-section .terms p {
+  font-size: 0.7rem;
+  color: #4d4d4d;
+}
+
+@media only screen and (max-width: 400px) {
+  .total-section button {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=SummaryTotal.css.map */

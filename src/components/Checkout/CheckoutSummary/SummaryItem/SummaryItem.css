@@ -1,0 +1,100 @@
+.item-section {
+  margin: 10px 20px;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 2fr;
+      grid-template-columns: 1fr 3fr 2fr;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.item-section:hover {
+  background: #f7f7f7;
+}
+
+.item-section .image-box {
+  width: 80px;
+  height: 100px;
+}
+
+.item-section .image-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-section .info-box .product-name {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.item-section .price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 5px;
+}
+
+.item-section .price-box button {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.item-section .price-box button:focus {
+  outline: 0;
+}
+
+.item-section .price-box .price {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.item-section .price-box .delete {
+  margin: 0 8px;
+}
+
+.item-section .price-box .delete:hover {
+  color: red;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .item-section {
+    margin: 10px 0;
+    padding: 10px 5px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .item-section .image-box {
+    margin: 0 auto;
+  }
+  .item-section .info-box .product-name {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .item-section .price-box {
+    border-bottom: 1px solid lightgrey;
+  }
+  .item-section .price-box .delete {
+    margin-left: 50px;
+  }
+}
+/*# sourceMappingURL=SummaryItem.css.map */

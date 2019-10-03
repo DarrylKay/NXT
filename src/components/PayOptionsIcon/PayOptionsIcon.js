@@ -3,8 +3,7 @@ import "./PayOptionsIcon.scss";
 import {
   FaTruckMoving,
   FaShoppingBasket,
-  FaCouch,
-  FaDiceD6,
+ 
   FaMoneyBill
 } from "react-icons/fa";
 import IconBox from "./IconBox/IconBox";

@@ -1,0 +1,49 @@
+.create-container {
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.create-container .create-box {
+  width: 350px;
+  float: left;
+}
+
+.create-container .create-box .create-header .title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.create-container .create-box .info-section {
+  width: 50%;
+  margin: 10px 0;
+}
+
+.create-container .create-box .info-section p {
+  font-size: 0.7rem;
+}
+
+.create-container .create-box .create-button {
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  background: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.create-container .create-box .create-button:hover {
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .create-container .create-box {
+    width: 350px;
+    float: right;
+  }
+}
+/*# sourceMappingURL=CreateAccount.css.map */

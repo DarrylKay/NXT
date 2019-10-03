@@ -62,18 +62,9 @@
       }
       .pay-boxes {
         grid-template-columns: 1fr;
-        padding: 0;
+        padding: 25px 0;
       }
     }
   }
 }
 
-@media only screen and (max-width: 350px) {
-  #pay-feature {
-    .pay-container {
-      .pay-boxes {
-        padding: 10px 0;
-      }
-    }
-  }
-}

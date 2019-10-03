@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,iBADe,CACf,mBAAmB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,WAAW;EAClC,OAAO,EAAE,MAAM;EACf,QAAQ,EAAE,IAAI;CACf;;AAGH,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACtC,AACE,iBADe,CACf,mBAAmB,CAAC;IAClB,qBAAqB,EAAE,GAAG;GAC3B",
+    "sources": [
+        "PayOptionsIcon.scss"
+    ],
+    "names": [],
+    "file": "PayOptionsIcon.css"
+}

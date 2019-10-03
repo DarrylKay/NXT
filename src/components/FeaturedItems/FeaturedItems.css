@@ -1,0 +1,166 @@
+#featured-section {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#featured-section .featured-header {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#featured-section .featured-header h4 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+#featured-section .featured-header hr {
+  background: #eeeeee;
+  width: 90%;
+}
+
+#featured-section .featured-header .btn-box {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-align: right;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#featured-section .featured-header .btn-box button {
+  font-family: "Montserrat";
+  padding: 10px 30px;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background: white;
+  border: 1px solid lightgrey;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+#featured-section .featured-header .btn-box button:hover, #featured-section .featured-header .btn-box button:active, #featured-section .featured-header .btn-box button:focus {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#featured-section .featured-products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  padding: 60px 10px;
+}
+
+#featured-section .more-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#featured-section .more-container .more-btn {
+  border-radius: 3px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 90%;
+  height: 60px;
+  border: 1px solid grey;
+  background: white;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+#featured-section .more-container .more-btn:hover, #featured-section .more-container .more-btn:active, #featured-section .more-container .more-btn:focus {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#featured-section .active {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+  #featured-section .featured-header {
+    -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+    padding: 0 5px;
+  }
+  #featured-section .featured-products {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 80px 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #featured-section .featured-header {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #featured-section .featured-header h4 {
+    font-size: 0.8rem;
+  }
+  #featured-section .featured-header hr {
+    display: none;
+    visibility: hidden;
+  }
+  #featured-section .featured-header .btn-box {
+    padding: 0 10px;
+    width: 90%;
+  }
+  #featured-section .featured-header .btn-box button {
+    padding: 10px 20px;
+    font-size: 0.7rem;
+  }
+  #featured-section .featured-products {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+/*# sourceMappingURL=FeaturedItems.css.map */

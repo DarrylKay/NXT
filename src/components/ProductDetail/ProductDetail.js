@@ -8,8 +8,19 @@ import {
   addingProductCart
 } from "../../redux/actions/allActions";
 import { withRouter } from "react-router-dom";
+import { TimelineMax } from "gsap";
 
 export class ProductDetail extends Component {
+  constructor(props) {
+    super(props);
+
+    this.myProd = null;
+  }
+
+  componentDidMount = () => {
+    new TimelineMax().from(this.myProd, 1, { x: 80, opacity: 0 });
+  };
+
   handleBulletDetails = () => {
     if (this.props.globalState.openProductInfo.bulletDetails) {
       return this.props.globalState.openProductInfo.bulletDetails.map(
@@ -63,14 +74,17 @@ export class ProductDetail extends Component {
 
   render() {
     return (
-      <div className="product-detail">
+      <div
+        className="product-detail"
+        
+      >
         <div className="container">
-          <div className="section">
+          <div className="section" >
             <div className="back-container">
               <FaAngleDoubleLeft onClick={this.props.history.goBack} />
               <h4 onClick={this.props.history.goBack}>Back</h4>
             </div>
-            <div className="product-container">
+            <div className="product-container" ref={div => (this.myProd = div)}>
               <div className="image-box">
                 <div
                   className="img"

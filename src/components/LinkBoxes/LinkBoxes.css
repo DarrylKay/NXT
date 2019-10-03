@@ -1,0 +1,25 @@
+.section-boxes {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+}
+
+@media only screen and (max-width: 850px) {
+  .section-boxes {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-boxes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2px;
+  }
+}
+/*# sourceMappingURL=LinkBoxes.css.map */

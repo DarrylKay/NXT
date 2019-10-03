@@ -7,11 +7,22 @@ import FeaturedItems from "../../components/FeaturedItems/FeaturedItems";
 import HomeFeatured from "../../components/HomeFeatured/HomeFeatured";
 import PayFeature from "../../components/PayFeature/PayFeature";
 import { connect } from "react-redux";
+import { TimelineMax } from "gsap";
 
 export class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.myHome = null;
+  }
+
+  componentDidMount() {
+    new TimelineMax().from(this.myHome, 1, { y: 50, opacity: 0 });
+  }
+
   render() {
     return (
-      <div className="container" >
+      <div className="container" ref={div => (this.myHome = div)}>
         <div className="section">
           <Hero />
         </div>

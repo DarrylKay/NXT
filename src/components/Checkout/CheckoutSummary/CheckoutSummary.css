@@ -1,0 +1,50 @@
+.summary-section {
+  margin: 20px auto;
+  width: 100%;
+  border: 1px solid lightgrey;
+}
+
+.summary-section .summary-header {
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.summary-section .summary-header h3 {
+  padding: 0 30px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.summary-section .summary-item-container .empty {
+  color: darkgrey;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.summary-section hr {
+  color: #e9e9e9;
+  background: #e9e9e9;
+  border: 1px solid #e9e9e9;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .summary-section {
+    width: 90%;
+  }
+  .summary-section .summary-item-container .empty {
+    color: darkgrey;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .summary-section hr {
+    color: #e9e9e9;
+    background: #e9e9e9;
+    border: 1px solid #e9e9e9;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=CheckoutSummary.css.map */

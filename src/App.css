@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  background-color: white;
+  font-family: "Montserrat";
+  height: 100%;
+}
+
+.container {
+  float: center;
+  background: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container .section {
+  padding: 60px 0 15px 0;
+}
+
+@media only screen and (max-width: 550px) {
+  .container .section {
+    padding: 30px 0 10px 0;
+  }
+}
+/*# sourceMappingURL=App.css.map */

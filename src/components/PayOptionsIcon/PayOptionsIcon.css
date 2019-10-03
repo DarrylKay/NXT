@@ -1,0 +1,16 @@
+.pay-icon-section .pay-icon-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 20px;
+  grid-gap: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .pay-icon-section .pay-icon-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=PayOptionsIcon.css.map */

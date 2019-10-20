@@ -16,8 +16,11 @@ export class Payment extends Component {
             name="payment"
             value="Card Payment"
             className="input"
+            aria-label="NXT clothing card payment"
           />
-          <label htmlFor="card-payment">Card Payment</label>
+          <label htmlFor="card-payment" aria-label="NXT clothing card payment">
+            Card Payment
+          </label>
           <p className="icon">
             {" "}
             <FaCcVisa /> <FaCcMastercard />
@@ -30,8 +33,11 @@ export class Payment extends Component {
             name="payment"
             value="paypal"
             className="input"
+            aria-label="NXT clothing paypal payment"
           />
-          <label htmlFor="paypal">PayPal</label>
+          <label htmlFor="paypal" aria-label="NXT clothing paypal payment">
+            PayPal
+          </label>
           <p className="icon">
             <FaCcPaypal />
           </p>

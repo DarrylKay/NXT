@@ -32,7 +32,7 @@ export class HomeFeatured extends Component {
             {this.showHomeAll()}
           </div>
           <div className="image-box">
-            <img src={homeFeatureImage} alt='home scene' />
+            <img src={homeFeatureImage} alt='NXT clothing home scene' />
           </div>
         </div>
       </div>

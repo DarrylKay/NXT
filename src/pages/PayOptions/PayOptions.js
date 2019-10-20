@@ -21,7 +21,7 @@ export class PayOptions extends Component {
   render() {
     return (
       <div className="container">
-        <div className="section" ref={div => (this.myCheckout = div)}>
+        <div className="section" ref={div => (this.myPay = div)}>
           <div className="pay-options-container">
             <PayOptionsHero />
             <div className="pay-options-box">

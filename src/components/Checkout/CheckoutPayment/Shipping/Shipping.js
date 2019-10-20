@@ -16,8 +16,9 @@ export class Shipping extends Component {
             value="DHL Next Day Delivery"
             className="input"
             onClick={() =>{this.props.updateShipping(2.99)}}
+            aria-label='NXT clothing next day delivery'
           />
-          <label htmlFor="next-day">DHL Next Day Delivery (1 day)</label>
+          <label htmlFor="next-day" aria-label='NXT clothing next day delivery'>DHL Next Day Delivery (1 day)</label>
           <p className="price">£2.99</p>
         </div>
         <div className="shipping-option">
@@ -28,8 +29,9 @@ export class Shipping extends Component {
             value="DHL Economy Delivery"
             className="input"
             onClick={() =>{this.props.updateShipping(0)}}
+            aria-label='NXT clothing economy delivery'
           />
-          <label htmlFor="economy">DHL Economy Delivery (2+ days)</label>
+          <label htmlFor="economy" aria-label='NXT clothing economy delivery'>DHL Economy Delivery (2+ days)</label>
           <p className="price">Free</p>
         </div>
       </div>

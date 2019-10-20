@@ -25,7 +25,7 @@ export class SummaryItem extends Component {
     return (
       <div className="item-section">
         <div className="image-box">
-          <img src={this.props.image} alt="product selected"></img>
+          <img src={this.props.image} alt="NXT Clothing product selected"></img>
         </div>
         <div className="info-box">
           <p className="product-name">{this.props.name}</p>

@@ -10,7 +10,7 @@ export class FeaturedProduct extends Component {
         <div className="image-box">
           <img
             src={this.props.image}
-            alt="display of product"
+            alt="NXT clothing display of product"
             className="featured-image"
           />
           <div className="featured-btn">

@@ -17,19 +17,19 @@ function SignIn() {
         </div>
         <div className="input-section">
           <div className="box">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email"></input>
+            <label htmlFor="email" aria-label='NXT clothing email label'>Email</label>
+            <input type="email" id="email" name="email" aria-label='NXT clothing email input'></input>
           </div>
           <div className="box">
-            <label htmlFor="password">Password</label>
-            <input type="text" id="password" name="password"></input>
+            <label htmlFor="password" aria-label='NXT clothing password label'>Password</label>
+            <input type="text" id="password" name="password" aria-label='NXT clothing password input'></input>
           </div>
         </div>
         <div className="forgot-details-section">
           <p>forgot your password?</p>
         </div>
         <div className="remember-section">
-          <input className='input' type="radio" />
+          <input className='input' type="radio" aria-label='NXT clothing remember me button'/>
           <p>Remember me</p>
         </div>
         <button className="sign-button">Sign In</button>

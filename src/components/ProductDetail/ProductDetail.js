@@ -62,7 +62,7 @@ export class ProductDetail extends Component {
               src={img}
               className="image"
               key={i}
-              alt="alternative versions of product"
+              alt="NXT clothing alternative versions of product"
             />
           );
         }

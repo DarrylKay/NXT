@@ -11,7 +11,11 @@ export class WishlistItem extends Component {
       <div id="item-box">
         <div className="image-box">
           <Link to="/productdetails">
-            <img src={this.props.image} alt='wishlist item'onClick={this.props.openInfo}></img>
+            <img
+              src={this.props.image}
+              alt="NXT clothing wishlist item"
+              onClick={this.props.openInfo}
+            ></img>
           </Link>
         </div>
         <div className="info-box">

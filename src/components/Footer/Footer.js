@@ -36,6 +36,7 @@ function Footer() {
             <input
               type="email"
               placeholder="subscribe to our newsletter"
+              aria-label='NXT clothing subscribe to newsletter'
             ></input>
             <button>Sign Up</button>
           </div>

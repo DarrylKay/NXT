@@ -1,6 +1,6 @@
 import React from "react";
 import "./Login.scss";
-import flag from "../../../assets/Various/GB-flag.png";
+import flag from "../../../assets/Various/GB-flag.jpg";
 import {Link} from 'react-router-dom'
 
 function LogIn() {
